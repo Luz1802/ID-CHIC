@@ -1,0 +1,27 @@
+/* Estandarización recomendada */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	font-family: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.div-hover-parent > a:hover{
+	color: #42fae0;
+}
+
+.ul-hover-parent > li a:hover{
+	color: #42fae0;
+	text-decoration: underline
+}
+
+
+

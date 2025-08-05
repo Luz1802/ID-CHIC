@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Carrito de compras de ID CHIC con método de pago y resumen de compra" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="ID CHIC" />
+    <title>ID CHIC - Carrito</title>
+
+    <!-- Tailwind vía CDN para desarrollo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Hoja de estilos adicional -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="mb-2">
+      <iframe
+        aria-label="Barra de navegación"
+        class="w-full h-20 border-none"
+        src="components/navbar.html"
+        frameborder="0"
+        scrolling="no"
+        loading="lazy">
+      </iframe>
+    </header>
+
+    <main class="flex-1 flex flex-col px-4 py-2">
+      <section class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-4">
+        <h1 class="text-center text-3xl font-bold text-pink-700 py-2 md:text-4xl lg:text-5xl tracking-tight">Carrito de Compras</h1>
+      </section>
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8 overflow-x-auto">
+        <table class="w-full" id="cart-table">
+          <thead>
+            <tr class="border-b">
+              <th scope="col" class="text-left py-4">Foto</th>
+              <th scope="col" class="text-left py-4">Producto</th>
+              <th scope="col" class="text-center py-4">Precio</th>
+              <th scope="col" class="text-center py-4">Cantidad</th>
+              <th scope="col" class="text-center py-4">Total</th>
+              <th scope="col" class="text-right py-4">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body">
+            <!-- Filas generadas dinámicamente con imágenes que deben incluir alt correctamente -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between gap-6">
+        <!-- Resumen de compra -->
+        <div class="w-full md:w-1/2">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4">Resumen de Compra</h2>
+            <div class="flex justify-between mb-2"><span>Subtotal</span><span id="subtotal">$0</span></div>
+            <div class="flex justify-between mb-2"><span>Envío</span><span>Gratis</span></div>
+            <div class="flex justify-between mb-2"><span>Impuestos</span><span id="impuestos">$0</span></div>
+            <div class="flex justify-between mb-2 font-semibold"><span>Total</span><span id="total">$0</span></div>
+            <button id="buy-btn" type="button" class="w-full bg-green-600 text-white py-3 rounded-lg mt-6 hover:bg-green-700 transition focus:outline-none focus:ring cursor-pointer">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <!-- Método de pago -->
+        <div class="w-full md:w-1/2">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4">Método de Pago</h2>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input type="radio" id="credit-card" name="payment" value="credit-card" checked class="mr-2" />
+                <label for="credit-card">Tarjeta de Crédito/Débito</label>
+              </div>
+              <div class="flex items-center">
+                <input type="radio" id="paypal" name="payment" value="paypal" class="mr-2" />
+                <label for="paypal">PayPal</label>
+              </div>
+              <div class="flex items-center">
+                <input type="radio" id="transfer" name="payment" value="transfer" class="mr-2" />
+                <label for="transfer">Transferencia Bancaria</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <iframe
+        aria-label="Pie de página"
+        class="w-full min-h-[18rem] sm:min-h-[20rem] md:min-h-[14rem] lg:min-h-[15rem] border-none"
+        src="components/footer.html"
+        frameborder="0"
+        scrolling="no"
+        loading="lazy">
+      </iframe>
+    </footer>
+  </body>
+</html>
