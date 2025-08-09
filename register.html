@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ID CHIC - Registro</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+
+  <!-- NAVBAR -->
+  <header class="mb-2">
+    <iframe src="components/navbar.html" class="w-full h-20 border-none" frameborder="0"></iframe>
+  </header>
+
+  <!-- FORMULARIO DE REGISTRO -->
+  <main class="flex-1 flex items-center justify-center px-4 py-6">
+    <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-2xl fade-in">
+      <div class="flex flex-col items-center mb-6">
+        <img src="images/logo.png" alt="ID CHIC" class="w-20 h-20 mb-3 logo">
+        <h2 class="text-2xl font-bold text-pink-700">Crear cuenta</h2>
+        <p class="text-sm text-gray-500">Completa tus datos para registrarte</p>
+      </div>
+
+      <form id="register-form" class="space-y-4">
+        <div>
+          <label for="nombre" class="block text-sm font-semibold text-gray-600">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-semibold text-gray-600">Correo electrónico</label>
+          <input type="email" id="email" name="email" required 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition">
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-semibold text-gray-600">Contraseña</label>
+          <input type="password" id="password" name="password" required 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition">
+        </div>
+        <div>
+          <label for="confirmar-password" class="block text-sm font-semibold text-gray-600">Confirmar contraseña</label>
+          <input type="password" id="confirmar-password" name="confirmar-password" required 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition">
+        </div>
+        <button type="submit" 
+          class="w-full py-2 rounded-lg bg-pink-700 text-white font-semibold text-lg hover:bg-pink-800 transition">
+          Registrarme
+        </button>
+      </form>
+
+      <div class="text-center mt-4">
+        <p class="text-sm text-gray-500">¿Ya tienes cuenta?
+          <a href="login.html" class="text-pink-600 hover:underline">Inicia sesión aquí</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <iframe src="components/footer.html" class="w-full min-h-[15rem] border-none" frameborder="0"></iframe>
+  </footer>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

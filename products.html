@@ -1,340 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ID CHIC - Productos</title>
-		<link rel="stylesheet" href="css/styles.css" />
-		<script src="https://cdn.tailwindcss.com"></script>
-	</head>
-	<body class="flex flex-col min-h-screen bg-gray-100">
-		<header class="mb-2">
-			<iframe
-			    class="w-full h-20 border-none"
-				src="components/navbar.html"
-				frameborder="0"
-				scrolling="no">
-			</iframe>
-		</header>
-		<main class="flex-1 flex flex-col px-4 py-2">
-			<section class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-4">
-				<h1 class="text-center text-3xl font-bold text-pink-700 py-2 md:text-4xl lg:text-5xl">
-					Nuestros Productos
-				</h1>
-				<ul class="flex justify-center gap-4 text-base text-gray-600 md:text-lg lg:text-xl ul-hover-parent">
-                 <li>
-				  <a href="#Porta Carnet">Porta Carnet</a>
-				 </li>
-                 <li>
-				  <a href="#Lanyards">Lanyards</a>
-				 </li>
-                 <li>
-				  <a href="#Pines">Pines</a>
-				 </li>
-				</ul>
-			</section>
-			
-			<!-- Porta Carnets -->
-            <section id="Porta Carnet" class="mb-16">
-				<h2 class="text-3xl font-bold mb-8 border-b pb-2">Porta Carnet</h2>
-				<div class="flex overflow-x-auto gap-6 pb-4">
-				  <!-- Card ejemplo, repite y cambia datos para 10 productos -->
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC1.jpg" alt="Porta Carnets Enfermera" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Enfermera.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Enfermera.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC2.jpg" alt="Porta Carnets Odontologia" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Odontologia.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Odontologia.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC3.jpg" alt="Porta Carnets Mariposas" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Mariposas.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Mariposas.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC4.jpg" alt="Porta Carnets Van Gogh" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Van Gogh.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Van Gogh.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC5.jpg" alt="Porta Carnets Brillos" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Brillos.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Brillos.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC6.jpg" alt="Porta Carnets Ricky and Morty" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Ricky and Morty.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Ricky and Morty.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC7.jpg" alt="Porta Carnets Marvel." class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Marvel.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño..</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Marvel.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC8.jpg" alt="Porta Carnets Monsters.inc" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Monsters.inc.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Monsters.inc.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC9.jpg" alt="Porta Carnets Nightmare's Christmas" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta CarnetsNightmare's Christmas.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta CarnetsNightmares Christmas.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				  <div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-					<img src="images/Porta Carnets/PC10.jpg" alt="Porta Carnets Minnie Mouse" class="w-full h-40 object-cover rounded-t-lg">
-					<div class="p-4 flex flex-col gap-2">
-					  <h3 class="text-lg font-semibold">Porta Carnets Minnie Mouse.</h3>
-					  <p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					  <p class="text-lg font-bold text-gray-900">$20.000</p>
-					  <button onclick="agregarAlCarrito('Porta Carnets Minnie Mouse.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-					</div>
-				  </div>
-				</div>
-			  </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ID CHIC - Productos</title>
+  <link rel="icon" type="image/png" href="images/logoIcono.png">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
 
-			<!-- Lanyards -->
-			<section id="Lanyards">
-				<h2 class="text-3xl font-bold mb-8 border-b pb-2">Lanyards</h2>
-			 <div class="flex overflow-x-auto gap-6 pb-4">
-				<!-- Card ejemplo, repite y cambia datos para 10 productos -->
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/1.jpg" alt="Lanyards Area de Salud" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Area de Salud.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Area de Salud.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/2.jpg" alt="Lanyards Huellitas" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Huellitas.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Huellitas.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/3.jpg" alt="Lanyards Perritos" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Perritos.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Perritos.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/4.jpg" alt="Lanyards Flores" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Flores.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Flores.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/5.jpg" alt="Lanyards Enfermeria" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Enfermeria.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Enfermeria.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/6.jpg" alt="Lanyards Stitch" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Stitch.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Stitch.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/7.jpg" alt="Lanyards de Capibara" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards de Capibara.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards de Capibara.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/8.jpg" alt="Lanyards Dino" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Dino.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Dino.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/9.jpg" alt="Lanyards Disney" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Disney.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Disney.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-				<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-				  <img src="images/Cintas/10.jpg" alt="Lanyards Harry Potter" class="w-full h-40 object-cover rounded-t-lg">
-				  <div class="p-4 flex flex-col gap-2">
-					<h3 class="text-lg font-semibold">Lanyards Harry Potter.</h3>
-					<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-					<p class="text-lg font-bold text-gray-900">$10.000</p>
-					<button onclick="agregarAlCarrito('Lanyards Harry Potter.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-				  </div>
-				</div>
-			  </div>
-			</section>
+  <!-- NAVBAR -->
+  <header class="mb-2">
+    <iframe class="w-full h-20 border-none" src="components/navbar.html" frameborder="0"></iframe>
+  </header>
 
-				<!--Pines -->
-				<section id="Pines">
-					<h2 class="text-3xl font-bold mb-8 border-b pb-2">Pines</h2>
-					<div class="flex overflow-x-auto gap-6 pb-4">
-						<!-- Card ejemplo, repite y cambia datos para 10 productos -->
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/1.jpg" alt="Pin Camaras" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Camaras.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Camaras.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/2.jpg" alt="Pin Odontologia" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Odontologia.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Odontologia.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/3.jpg" alt="Pin Perritos" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Perritos.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Perritos.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/4.jpg" alt="Pin Estetocopio" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Estetocopio.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Estetocopio.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/5.jpg" alt="Pin LGBT+" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin LGBT+.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin LGBT+.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/6.jpg" alt="Pin El Principito" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin El Principito.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin El Principito.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/7.jpg" alt="Pin Harry Potter" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Harry Potter.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Harry Potter.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/8.jpg" alt="Pin Cars" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Cars.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Cars.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/9.jpg" alt="Pin Stitch" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Stitch.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Stitch.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-						<div class="min-w-[250px] bg-white rounded-lg shadow-md flex-shrink-0">
-						<img src="images/Pines/10.jpg" alt="Pin Marvel" class="w-full h-40 object-cover rounded-t-lg">
-						<div class="p-4 flex flex-col gap-2">
-							<h3 class="text-lg font-semibold">Pin Marvel.</h3>
-							<p class="text-gray-600 text-sm">Contáctanos para escoger tu diseño.</p>
-							<p class="text-lg font-bold text-gray-900">$5.000</p>
-							<button onclick="agregarAlCarrito('Pin Marvel.')" class="mt-2 bg-pink-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Agregar al carrito</button>
-						</div>
-						</div>
-					</div>
-					</section>
-		</main>
-		<footer>
-			<iframe
-			    class="w-full min-h-[18rem] sm:min-h-[20rem] md:min-h-[14rem] lg:min-h-[15rem] border-none"
-				src="components/footer.html"
-				frameborder="0"
-				scrolling="no">
-			</iframe>
-		</footer>					
-	</body>
+  <main class="flex-1 flex flex-col px-4 py-2">
+
+    <!-- TÍTULO ENCERRADO EN BLOQUE BLANCO -->
+    <div class="bg-white rounded-lg shadow p-4 mb-4">
+      <h1 class="text-center text-3xl font-bold text-pink-700">Nuestros Productos</h1>
+    </div>
+
+    <!-- Barra de búsqueda sticky -->
+    <div id="search-container" class="flex justify-center mb-6 sticky top-0 bg-pink-50 z-10 p-3">
+      <div class="relative w-full max-w-md">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Buscar productos..." 
+          class="w-full border border-gray-300 rounded-lg py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-pink-500"
+        />
+        <span class="absolute inset-y-0 left-3 flex items-center text-gray-400 text-xl">🔍</span>
+      </div>
+    </div>
+
+    <!-- Porta Carnets -->
+    <section id="porta-carnets" class="mb-10">
+      <h2 class="text-3xl font-bold mb-4 border-b pb-2">Porta Carnets</h2>
+      <div id="seccion-porta-carnets" class="flex overflow-x-auto gap-4 pb-4"></div>
+    </section>
+
+    <!-- Lanyards -->
+    <section id="lanyards" class="mb-10">
+      <h2 class="text-3xl font-bold mb-4 border-b pb-2">Lanyards</h2>
+      <div id="seccion-lanyards" class="flex overflow-x-auto gap-4 pb-4"></div>
+    </section>
+
+    <!-- Pines -->
+    <section id="pines" class="mb-10">
+      <h2 class="text-3xl font-bold mb-4 border-b pb-2">Pines</h2>
+      <div id="seccion-pines" class="flex overflow-x-auto gap-4 pb-4"></div>
+    </section>
+  </main>
+
+  <!-- Carrito flotante -->
+  <a id="cart-float" href="cart.html">
+    🛒 <span id="cart-count">0</span>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <iframe class="w-full min-h-[18rem] sm:min-h-[20rem] md:min-h-[14rem] lg:min-h-[15rem] border-none"
+      src="components/footer.html" frameborder="0"></iframe>
+  </footer>
+
+  <script src="js/api.js"></script>
+</body>
 </html>

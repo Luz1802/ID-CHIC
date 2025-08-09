@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ID CHIC - Inicio</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ID CHIC - Inicio</title>
+  <link rel="icon" type="image/png" href="images/logoIcono.png">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen bg-gray-100">
 
-    <header class="mb-2">
-        <iframe
-            class="w-full h-20 border-none"
-            src="components/navbar.html"
-            frameborder="0"
-            scrolling="no">
-        </iframe>
-    </header>
+  <!-- NAVBAR -->
+  <header class="mb-2">
+    <iframe class="w-full h-20 border-none" src="components/navbar.html" frameborder="0"></iframe>
+  </header>
 
-    <main class="flex-1 flex flex-col px-4 py-2">
-        <section class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-4">
-            <h1 class="text-center text-3xl font-bold text-pink-700 py-2 md:text-4xl lg:text-5xl">
-                Bienvenido a ID CHIC
-            </h1>
-            <p class="text-center text-base text-gray-600 md:text-lg lg:text-xl">
-                Tu tienda de confianza para identificarte
-            </p>
-        </section>
+  <!-- Hero -->
+  <main class="flex-1 flex flex-col px-4 py-2">
+    <section class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-6">
+      <h1 class="text-center text-3xl font-bold text-pink-700 py-2 md:text-4xl lg:text-5xl">
+        Bienvenido a ID CHIC
+      </h1>
+      <p class="text-center text-base text-gray-600 md:text-lg lg:text-xl">
+        Tu tienda de confianza para identificarte
+      </p>
+    </section>
 
-        <section class="py-6 bg-gray-100">
-            <h2 class="text-center text-3xl font-bold text-black mb-6">Nuestras Categorías</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+<section class="py-6 bg-gray-100">
+  <h2 class="text-center text-3xl font-bold text-black mb-6">Nuestras Categorías</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
 
-                <!-- Porta Carnet -->
-                <a href="products.html#PortaCarnet" class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-                    <img src="images/Productos/Porta Carnet.jpg" alt="Porta Carnet" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-black">Porta Carnet</h3>
-                        <p class="text-sm text-gray-600">Los mejores diseños para cada estilo</p>
-                    </div>
-                </a>
+    <!-- Porta Carnet -->
+    <a href="products.html#porta-carnets" 
+       class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col sm:flex-row">
+      <img src="images/Productos/Porta Carnet.jpg" alt="Porta Carnet" class="w-full sm:w-1/2 h-48 object-cover">
+      <div class="p-4 flex flex-col justify-center text-center sm:text-left sm:w-1/2">
+        <h3 class="text-lg font-bold text-black">Porta Carnet</h3>
+        <p class="text-sm text-gray-600">Los mejores diseños para cada estilo</p>
+      </div>
+    </a>
 
-                <!-- Lanyards -->
-                <a href="products.html#Lanyards" class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-                    <img src="images/Productos/Cintas.jpg" alt="Lanyards" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-black">Lanyards</h3>
-                        <p class="text-sm text-gray-600">Complementos para tu ID Chic</p>
-                    </div>
-                </a>
+    <!-- Lanyards -->
+    <a href="products.html#lanyards" 
+       class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col sm:flex-row">
+      <img src="images/Productos/Cintas.jpg" alt="Lanyards" class="w-full sm:w-1/2 h-48 object-cover">
+      <div class="p-4 flex flex-col justify-center text-center sm:text-left sm:w-1/2">
+        <h3 class="text-lg font-bold text-black">Lanyards</h3>
+        <p class="text-sm text-gray-600">Complementos para tu ID Chic</p>
+      </div>
+    </a>
 
-                <!-- Pines -->
-                <a href="products.html#Pines" class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-                    <img src="images/Productos/Pines.jpg" alt="Pines" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-black">Pines</h3>
-                        <p class="text-sm text-gray-600">Dale tu estilo personal a tu ID Chic</p>
-                    </div>
-                </a>
+    <!-- Pines -->
+    <a href="products.html#pines" 
+       class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col sm:flex-row">
+      <img src="images/Productos/Pines.jpg" alt="Pines" class="w-full sm:w-1/2 h-48 object-cover">
+      <div class="p-4 flex flex-col justify-center text-center sm:text-left sm:w-1/2">
+        <h3 class="text-lg font-bold text-black">Pines</h3>
+        <p class="text-sm text-gray-600">Dale tu estilo personal a tu ID Chic</p>
+      </div>
+    </a>
 
-            </div>
-        </section>
+  </div>
+</section>
+
+
+
     </main>
 
     <footer>

@@ -1,16 +1,17 @@
 <head>
   <link rel="stylesheet" href="../css/styles.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <nav class="bg-pink-700 text-white p-4 mb-4">
-  <div class="container mx-auto flex justify-between">
+  <div class="container mx-auto flex justify-between items-center">
     <a href="../index.html" target="_parent" class="text-2xl font-bold">ID CHIC</a>
-    <div class="hidden space-x-6 md:flex div-hover-parent">
-      <a href="../index.html" target="_parent">Inicio</a>
-      <a href="../products.html" target="_parent">Productos</a>
-      <a href="../cart.html" target="_parent">Carrito</a>
-      <a href="../contact.html" target="_parent" >Contacto</a>
+    <div class="hidden space-x-6 md:flex">
+      <a href="../index.html" target="_parent" class="nav-link">Inicio</a>
+      <a href="../products.html" target="_parent" class="nav-link">Productos</a>
+      <a href="../cart.html" target="_parent" class="nav-link">Carrito</a>
+      <a href="../contact.html" target="_parent" class="nav-link">Contacto</a>
+      <a href="../login.html" target="_parent" class="nav-link">Iniciar Sesión</a>
     </div>
-    <button class="md:hidden">☰</button>
+    <button class="md:hidden bg-white text-black px-2 py-1 rounded">☰</button>
   </div>
 </nav>
